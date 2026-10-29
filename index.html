@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="Explore e adapte prompts cinematográficos de hip-hop, cenas urbanas, cyberpunk e surreais.">
+  <link rel="icon" href="data:,">
+  <title>FrameLab — prompts cinematográficos</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #11120f;
+      --panel: #191a16;
+      --panel-light: #20211c;
+      --line: #33342d;
+      --muted: #a4a596;
+      --text: #f3f1e8;
+      --lime: #d3f36b;
+      --orange: #e8935c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 15px/1.5 "Avenir Next", Avenir, "Segoe UI", sans-serif;
+    }
+
+    button, input, select { font: inherit; }
+    button, select { cursor: pointer; }
+
+    .shell { max-width: 1440px; margin: auto; padding: 0 5.2%; }
+
+    header {
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 29px;
+      height: 29px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--lime);
+      color: var(--bg);
+      font-size: 14px;
+    }
+
+    .header-note { color: var(--muted); font-size: 12px; letter-spacing: .08em; }
+
+    .intro { padding: 60px 0 38px; }
+    .eyebrow {
+      color: var(--lime);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 15px 0 13px;
+      font-size: clamp(38px, 5vw, 65px);
+      letter-spacing: -.055em;
+      line-height: 1.03;
+    }
+
+    h1 span { color: var(--lime); }
+    .intro-copy { max-width: 600px; margin: 0; color: var(--muted); font-size: 16px; }
+
+    .stats { display: flex; gap: 27px; margin-top: 28px; }
+    .stat { display: flex; align-items: baseline; gap: 7px; color: var(--muted); font-size: 12px; }
+    .stat strong { color: var(--text); font-size: 17px; }
+
+    .workspace {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(330px, .75fr);
+      align-items: start;
+      gap: 25px;
+      padding-bottom: 70px;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 15px;
+      margin: 0 0 17px;
+    }
+
+    h2 { margin: 0; font-size: 21px; letter-spacing: -.025em; }
+    .section-heading p { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+    .result-count { color: var(--muted); font-size: 12px; white-space: nowrap; }
+
+    .filters {
+      display: grid;
+      grid-template-columns: 1.35fr repeat(2, 1fr);
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .field, .filter-control {
+      width: 100%;
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      outline: none;
+      background: var(--panel);
+      color: var(--text);
+    }
+
+    .filter-control { height: 42px; padding: 0 11px; font-size: 12px; }
+    .field:focus, .filter-control:focus { border-color: var(--lime); }
+    input::placeholder { color: #77786f; }
+
+    .filter-label {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .filters .filter-label:first-child { grid-column: 1 / -1; }
+    .filters .filter-label:first-child .filter-control { padding-left: 13px; }
+
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+
+    .scene-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+      transition: border-color .2s, transform .2s;
+    }
+
+    .scene-card:hover { transform: translateY(-2px); border-color: #676a52; }
+
+    .scene-art {
+      position: relative;
+      display: flex;
+      min-height: 145px;
+      align-items: end;
+      padding: 14px;
+      overflow: hidden;
+      background: var(--art);
+    }
+
+    .scene-art::before, .scene-art::after {
+      position: absolute;
+      content: "";
+      pointer-events: none;
+    }
+
+    .scene-art::before {
+      inset: 0;
+      opacity: .62;
+      background: linear-gradient(180deg, transparent 13%, rgba(12, 12, 10, .78) 100%);
+    }
+
+    .scene-art::after {
+      width: 125px;
+      height: 125px;
+      top: -40px;
+      right: -25px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 50%;
+      box-shadow: 0 0 0 18px rgba(255,255,255,.035), 0 0 0 38px rgba(255,255,255,.025);
+    }
+
+    .art-label {
+      position: relative;
+      z-index: 1;
+      color: rgba(255,255,255,.76);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .card-body { padding: 14px; }
+    .card-title-row { display: flex; align-items: start; justify-content: space-between; gap: 8px; }
+    .card-title { margin: 0; font-size: 15px; line-height: 1.25; }
+    .card-number { color: #77786f; font-size: 10px; }
+    .card-description { min-height: 37px; margin: 7px 0 12px; color: var(--muted); font-size: 11px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 5px; }
+
+    .tag {
+      padding: 4px 7px;
+      border: 1px solid #383a32;
+      border-radius: 20px;
+      color: #c4c5b9;
+      font-size: 9px;
+      line-height: 1.2;
+    }
+
+    .adapt-card {
+      width: 100%;
+      margin-top: 13px;
+      padding: 9px;
+      border: 1px solid #44463a;
+      border-radius: 7px;
+      background: transparent;
+      color: var(--lime);
+      font-size: 11px;
+      font-weight: 700;
+      transition: background .15s, color .15s;
+    }
+
+    .adapt-card:hover { background: var(--lime); color: var(--bg); }
+    .builder {
+      position: sticky;
+      top: 18px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--panel);
+    }
+
+    .builder .section-heading { align-items: start; margin-bottom: 20px; }
+    .builder-mark {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: 9px;
+      background: #2a3020;
+      color: var(--lime);
+      font-size: 17px;
+    }
+
+    .builder-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 10px; }
+    .builder-fields .wide { grid-column: 1 / -1; }
+
+    .field { height: 42px; padding: 0 11px; font-size: 12px; }
+    select.field { color: var(--text); }
+    .field-label { display: flex; flex-direction: column; gap: 6px; color: #c2c3b8; font-size: 11px; }
+    .helper { color: #828378; font-size: 10px; }
+
+    .preview-label {
+      display: flex;
+      justify-content: space-between;
+      margin: 18px 0 7px;
+      color: #c2c3b8;
+      font-size: 11px;
+    }
+
+    .language-note { color: #85867a; font-size: 10px; }
+    .prompt-preview {
+      min-height: 148px;
+      width: 100%;
+      resize: vertical;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      outline: none;
+      background: #12130f;
+      color: #e3e3d8;
+      font: 11px/1.65 "SFMono-Regular", Consolas, monospace;
+    }
+
+    .prompt-preview:focus { border-color: var(--lime); }
+    .builder-actions { display: flex; gap: 8px; margin-top: 10px; }
+    .primary-button, .secondary-button {
+      min-height: 42px;
+      border: 1px solid var(--lime);
+      border-radius: 7px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .primary-button { flex: 1; background: var(--lime); color: #17190f; }
+    .primary-button:hover { background: #e1ff8a; }
+    .secondary-button { padding: 0 13px; background: transparent; color: var(--text); }
+    .secondary-button:hover { background: #292b23; }
+    .status { min-height: 17px; margin: 8px 0 0; color: var(--lime); font-size: 10px; }
+    .empty-state { grid-column: 1 / -1; padding: 35px 20px; border: 1px dashed var(--line); border-radius: 10px; color: var(--muted); text-align: center; }
+
+    footer {
+      padding: 20px 0 28px;
+      border-top: 1px solid var(--line);
+      color: #818277;
+      font-size: 11px;
+    }
+
+    @media (max-width: 950px) {
+      .shell { padding: 0 4%; }
+      .workspace { grid-template-columns: minmax(0, 1fr) minmax(300px, .83fr); gap: 16px; }
+      .builder { padding: 17px; }
+      .filters { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 720px) {
+      header { height: 66px; }
+      .header-note { display: none; }
+      .intro { padding: 43px 0 30px; }
+      .workspace { grid-template-columns: 1fr; }
+      .builder { position: static; grid-row: 1; }
+      .library { grid-row: 2; }
+    }
+
+    @media (max-width: 470px) {
+      .shell { padding: 0 18px; }
+      .cards { grid-template-columns: 1fr; }
+      .scene-art { min-height: 160px; }
+      .filters { grid-template-columns: 1fr 1fr; }
+      .stats { gap: 15px; }
+      .stat { gap: 4px; font-size: 10px; }
+      .stat strong { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="#" aria-label="FrameLab, início">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        FRAMELAB
+      </a>
+      <span class="header-note">CINEMA EM CADA PROMPT&nbsp; / &nbsp;VOL. 01</span>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="eyebrow">Laboratório de cenas cinematográficas</div>
+        <h1 id="page-title">Encontre a cena.<br><span>Invente o próximo frame.</span></h1>
+        <p class="intro-copy">Uma biblioteca visual para explorar universos hip-hop, urbanos, cyberpunk e surreais — e transformar referências em prompts que têm a sua assinatura.</p>
+        <div class="stats" aria-label="Conteúdo da biblioteca">
+          <div class="stat"><strong id="total-count">08</strong> cenas</div>
+          <div class="stat"><strong>04</strong> universos</div>
+          <div class="stat"><strong>04</strong> dimensões criativas</div>
+        </div>
+      </section>
+
+      <div class="workspace">
+        <section class="library" aria-labelledby="library-title">
+          <div class="section-heading">
+            <div>
+              <h2 id="library-title">Biblioteca de cenas</h2>
+              <p>Explore por tema, luz, ambiente ou composição.</p>
+            </div>
+            <span class="result-count" id="result-count" aria-live="polite"></span>
+          </div>
+
+          <div class="filters" aria-label="Filtros da biblioteca">
+            <label class="filter-label">Buscar cena
+              <input class="filter-control" id="search" type="search" placeholder="Ex.: fumaça, neon, rooftop…" autocomplete="off">
+            </label>
+            <label class="filter-label">Tema
+              <select class="filter-control" id="theme-filter">
+                <option value="">Todos</option>
+                <option value="hip-hop">Hip-hop</option>
+                <option value="urbano">Urbano</option>
+                <option value="cyberpunk">Cyberpunk</option>
+                <option value="surreal">Surreal</option>
+              </select>
+            </label>
+            <label class="filter-label">Iluminação
+              <select class="filter-control" id="light-filter">
+                <option value="">Todas</option>
+                <option value="neon">Neon</option>
+                <option value="chiaroscuro">Claro-escuro</option>
+                <option value="golden">Dourada</option>
+                <option value="soft">Difusa</option>
+              </select>
+            </label>
+            <label class="filter-label">Ambiente
+              <select class="filter-control" id="environment-filter">
+                <option value="">Todos</option>
+                <option value="rooftop">Rooftop</option>
+                <option value="alley">Beco</option>
+                <option value="studio">Estúdio</option>
+                <option value="subway">Metrô</option>
+                <option value="dreamscape">Paisagem onírica</option>
+              </select>
+            </label>
+            <label class="filter-label">Composição
+              <select class="filter-control" id="composition-filter">
+                <option value="">Todas</option>
+                <option value="portrait">Retrato</option>
+                <option value="wide">Plano aberto</option>
+                <option value="low-angle">Contra-plongée</option>
+                <option value="symmetry">Simétrica</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="cards" id="scene-cards">
+            <article class="scene-card" data-theme="hip-hop" data-light="golden" data-environment="rooftop" data-composition="wide" data-search="hip-hop rooftop golden hour crew skyline dança">
+              <div class="scene-art" style="--art: radial-gradient(ellipse at 68% 28%, #e8a65c 0, transparent 35%), linear-gradient(135deg, #34352a, #765039 53%, #20211b);">
+                <span class="art-label">01 / Golden hour</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title-row"><h3 class="card-title">Última luz no rooftop</h3><span class="card-number">01</span></div>
+                <p class="card-description">Uma crew ocupa o alto da cidade enquanto o sol desaparece no horizonte.</p>
+                <div class="tags"><span class="tag">Hip-hop</span><span class="tag">Dourada</span><span class="tag">Rooftop</span><span class="tag">Plano aberto</span></div>
+                <button class="adapt-card" type="button" data-subject="A hip-hop dance crew" data-action="freestyling together above the city">Adaptar esta cena&nbsp; ↗</button>
+              </div>
+            </article>
+
+            <article class="scene-card" data-theme="urbano" data-light="chiaroscuro" data-environment="alley" data-composition="low-angle" data-search="urbano beco chiaroscuro sombra grafite chuva">
+              <div class="scene-art" style="--art: radial-gradient(ellipse at 46% 65%, #a34a27 0, transparent 31%), linear-gradient(120deg, #151918, #39403a 48%, #1c1b19);">
+                <span class="art-label">02 / Chiaroscuro</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title-row"><h3 class="card-title">Ecos do beco</h3><span class="card-number">02</span></div>
+                <p class="card-description">Paredes marcadas, chão molhado e uma figura entre luz e sombra.</p>
+                <div class="tags"><span class="tag">Urbano</span><span class="tag">Claro-escuro</span><span class="tag">Beco</span><span class="tag">Contra-plongée</span></div>
+                <button class="adapt-card" type="button" data-subject="A lone street dancer" data-action="moving through a rain-soaked graffiti alley">Adaptar esta cena&nbsp; ↗</button>
+              </div>
+            </article>
+
+            <article class="scene-card" data-theme="cyberpunk" data-light="neon" data-environment="subway" data-composition="symmetry" data-search="cyberpunk neon metro subway cidade futurista simetria">
+              <div class="scene-art" style="--art: radial-gradient(ellipse at 50% 35%, #b52c92 0, transparent 32%), linear-gradient(100deg, #161d38, #42345e 48%, #162834);">
+                <span class="art-label">03 / Neon pulse</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title-row"><h3 class="card-title">Linha fantasma</h3><span class="card-number">03</span></div>
+                <p class="card-description">O último trem atravessa uma estação futurista iluminada por neon.</p>
+                <div class="tags"><span class="tag">Cyberpunk</span><span class="tag">Neon</span><span class="tag">Metrô</span><span class="tag">Simétrica</span></div>
+                <button class="adapt-card" type="button" data-subject="A courier in a reflective jacket" data-action="waiting for the last train in a futuristic station">Adaptar esta cena&nbsp; ↗</button>
+              </div>
+            </article>
+
+            <article class="scene-card" data-theme="surreal" data-light="soft" data-environment="dreamscape" data-composition="portrait" data-search="surreal onírico paisagem sonho difusa retrato flutuando">
+              <div class="scene-art" style="--art: radial-gradient(ellipse at 45% 28%, #d7bdad 0, transparent 32%), linear-gradient(145deg, #687178, #91827e 48%, #494950);">
+                <span class="art-label">04 / Soft focus</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title-row"><h3 class="card-title">Gravidade suspensa</h3><span class="card-number">04</span></div>
+                <p class="card-description">Um retrato suspenso num deserto que desafia a lógica e o tempo.</p>
+                <div class="tags"><span class="tag">Surreal</span><span class="tag">Difusa</span><span class="tag">Paisagem onírica</span><span class="tag">Retrato</span></div>
+                <button class="adapt-card" type="button" data-subject="A poet suspended above a quiet desert" data-action="reaching toward a floating doorway">Adaptar esta cena&nbsp; ↗</button>
+              </div>
+            </article>
+
+            <article class="scene-card" data-theme="hip-hop" data-light="neon" data-environment="studio" data-composition="portrait" data-search="hip-hop estúdio neon rapper microfone retrato">
+              <div class="scene-art" style="--art: radial-gradient(ellipse at 24% 40%, #d36935 0, transparent 28%), linear-gradient(140deg, #231c24, #643b40 50%, #181916);">
+                <span class="art-label">05 / Backstage glow</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title-row"><h3 class="card-title">Verso no escuro</h3><span class="card-number">05</span></div>
+                <p class="card-description">Um MC prepara o próximo verso num estúdio íntimo e carregado de cor.</p>
+                <div class="tags"><span class="tag">Hip-hop</span><span class="tag">Neon</span><span class="tag">Estúdio</span><span class="tag">Retrato</span></div>
+                <button class="adapt-card" type="button" data-subject="An independent MC in a recording studio" data-action="leaning into the microphone between takes">Adaptar esta cena&nbsp; ↗</button>
+              </div>
+            </article>
+
+            <article class="scene-card" data-theme="urbano" data-light="golden" data-environment="subway" data-composition="wide" data-search="urbano metrô golden hour estação movimento plano aberto">
+              <div class="scene-art" style="--art: radial-gradient(ellipse at 75% 35%, #db9855 0, transparent 27%), linear-gradient(115deg, #363632, #66503a 52%, #252822);">
+                <span class="art-label">06 / Motion study</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title-row"><h3 class="card-title">Entre estações</h3><span class="card-number">06</span></div>
+                <p class="card-description">O movimento da cidade se dissolve ao redor de quem não tem pressa.</p>
+                <div class="tags"><span class="tag">Urbano</span><span class="tag">Dourada</span><span class="tag">Metrô</span><span class="tag">Plano aberto</span></div>
+                <button class="adapt-card" type="button" data-subject="A solitary commuter in a busy station" data-action="standing still as the crowd blurs around them">Adaptar esta cena&nbsp; ↗</button>
+              </div>
+            </article>
+
+            <article class="scene-card" data-theme="cyberpunk" data-light="chiaroscuro" data-environment="rooftop" data-composition="low-angle" data-search="cyberpunk rooftop contra-plongée chuva holograma sombras">
+              <div class="scene-art" style="--art: radial-gradient(ellipse at 70% 30%, #4f7275 0, transparent 30%), linear-gradient(125deg, #141c21, #34494c 48%, #191b1a);">
+                <span class="art-label">07 / After the rain</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title-row"><h3 class="card-title">Cidade de baixo para cima</h3><span class="card-number">07</span></div>
+                <p class="card-description">Hologramas pairam sobre os telhados numa noite de chuva elétrica.</p>
+                <div class="tags"><span class="tag">Cyberpunk</span><span class="tag">Claro-escuro</span><span class="tag">Rooftop</span><span class="tag">Contra-plongée</span></div>
+                <button class="adapt-card" type="button" data-subject="A rooftop mechanic under towering holograms" data-action="looking up through the electric rain">Adaptar esta cena&nbsp; ↗</button>
+              </div>
+            </article>
+
+            <article class="scene-card" data-theme="surreal" data-light="neon" data-environment="alley" data-composition="symmetry" data-search="surreal beco neon espelhos reflexos simétrico">
+              <div class="scene-art" style="--art: radial-gradient(ellipse at 50% 38%, #8463af 0, transparent 30%), linear-gradient(110deg, #29273e, #51406e 52%, #20212b);">
+                <span class="art-label">08 / Mirror world</span>
+              </div>
+              <div class="card-body">
+                <div class="card-title-row"><h3 class="card-title">Beco do outro lado</h3><span class="card-number">08</span></div>
+                <p class="card-description">Reflexos duplicam a rua e abrem passagem para uma cidade impossível.</p>
+                <div class="tags"><span class="tag">Surreal</span><span class="tag">Neon</span><span class="tag">Beco</span><span class="tag">Simétrica</span></div>
+                <button class="adapt-card" type="button" data-subject="A masked musician in a mirrored alley" data-action="stepping through a reflection into another city">Adaptar esta cena&nbsp; ↗</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <aside class="builder" aria-labelledby="builder-title">
+          <div class="section-heading">
+            <div>
+              <h2 id="builder-title">Direção de cena</h2>
+              <p>Combine elementos e crie sua versão.</p>
+            </div>
+            <span class="builder-mark" aria-hidden="true">✳</span>
+          </div>
+
+          <div class="builder-fields">
+            <label class="field-label wide">Personagem ou cena
+              <input class="field" id="subject" type="text" value="A hip-hop dance crew" maxlength="120">
+            </label>
+            <label class="field-label wide">Ação
+              <input class="field" id="action" type="text" value="freestyling together above the city" maxlength="120">
+            </label>
+            <label class="field-label">Tema
+              <select class="field" id="theme">
+                <option value="hip-hop">Hip-hop</option>
+                <option value="urbano">Urbano</option>
+                <option value="cyberpunk">Cyberpunk</option>
+                <option value="surreal">Surreal</option>
+              </select>
+            </label>
+            <label class="field-label">Iluminação
+              <select class="field" id="light">
+                <option value="golden">Dourada de fim de tarde</option>
+                <option value="neon">Neon saturado</option>
+                <option value="chiaroscuro">Claro-escuro dramático</option>
+                <option value="soft">Luz difusa e suave</option>
+              </select>
+            </label>
+            <label class="field-label">Ambiente
+              <select class="field" id="environment">
+                <option value="rooftop">Rooftop urbano</option>
+                <option value="alley">Beco com grafites</option>
+                <option value="studio">Estúdio intimista</option>
+                <option value="subway">Estação de metrô</option>
+                <option value="dreamscape">Paisagem onírica</option>
+              </select>
+            </label>
+            <label class="field-label">Composição
+              <select class="field" id="composition">
+                <option value="wide">Plano aberto</option>
+                <option value="portrait">Retrato fechado</option>
+                <option value="low-angle">Contra-plongée</option>
+                <option value="symmetry">Composição simétrica</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="preview-label">
+            <span>Seu prompt</span>
+            <span class="language-note">em inglês · pronto para imagem</span>
+          </div>
+          <textarea class="prompt-preview" id="prompt-preview" aria-label="Prévia editável do prompt"></textarea>
+          <div class="builder-actions">
+            <button class="primary-button" id="generate" type="button">Atualizar prompt&nbsp; ↗</button>
+            <button class="secondary-button" id="copy" type="button">Copiar</button>
+          </div>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+        </aside>
+      </div>
+    </main>
+
+    <footer>FrameLab — um ponto de partida para cenas que ainda não existem.</footer>
+  </div>
+
+  <script>
+    const labels = {
+      theme: {
+        "hip-hop": "hip-hop culture, authentic street style",
+        urbano: "contemporary urban cinema, lived-in city details",
+        cyberpunk: "cyberpunk future, analog grit and electric city energy",
+        surreal: "surreal dream logic, unexpected visual poetry"
+      },
+      light: {
+        golden: "warm golden-hour light, long amber shadows",
+        neon: "saturated neon spill, vivid magenta and cyan highlights",
+        chiaroscuro: "dramatic chiaroscuro, deep shadows and a sculpted beam of light",
+        soft: "soft diffused light, muted tones and delicate atmospheric haze"
+      },
+      environment: {
+        rooftop: "an urban rooftop overlooking a dense city skyline",
+        alley: "a narrow graffiti-covered alley, wet pavement and layered textures",
+        studio: "an intimate recording studio, analog equipment and acoustic panels",
+        subway: "a cavernous subway station, tiled walls and distant train lights",
+        dreamscape: "a quiet dreamscape where impossible architecture meets open space"
+      },
+      composition: {
+        wide: "wide cinematic frame, layered foreground and a sweeping sense of scale",
+        portrait: "intimate portrait framing, expressive face and tactile detail",
+        "low-angle": "low-angle shot, monumental perspective and strong leading lines",
+        symmetry: "balanced symmetrical composition, centered subject and deliberate geometry"
+      }
+    };
+
+    const sceneCards = [...document.querySelectorAll(".scene-card")];
+    const filterIds = ["theme", "light", "environment", "composition"];
+    const search = document.getElementById("search");
+    const preview = document.getElementById("prompt-preview");
+    const status = document.getElementById("status");
+
+    function buildPrompt() {
+      const subject = document.getElementById("subject").value.trim() || "A mysterious protagonist";
+      const action = document.getElementById("action").value.trim() || "moving through the scene";
+      const theme = document.getElementById("theme").value;
+      const light = document.getElementById("light").value;
+      const environment = document.getElementById("environment").value;
+      const composition = document.getElementById("composition").value;
+      preview.value = `${subject}, ${action}, ${labels.theme[theme]}, ${labels.environment[environment]}, ${labels.light[light]}, ${labels.composition[composition]}, cinematic still, rich film grain, nuanced color grading, high detail.`;
+      status.textContent = "";
+    }
+
+    function updateCards() {
+      const query = search.value.trim().toLocaleLowerCase("pt-BR");
+      let visible = 0;
+      sceneCards.forEach((card) => {
+        const matchesFilters = filterIds.every((key) => {
+          const value = document.getElementById(`${key}-filter`).value;
+          return !value || card.dataset[key] === value;
+        });
+        const matchesSearch = !query || `${card.dataset.search} ${card.textContent}`.toLocaleLowerCase("pt-BR").includes(query);
+        const isVisible = matchesFilters && matchesSearch;
+        card.hidden = !isVisible;
+        if (isVisible) visible += 1;
+      });
+      document.getElementById("result-count").textContent = `${visible} ${visible === 1 ? "cena" : "cenas"}`;
+      const emptyState = document.getElementById("empty-state");
+      if (visible === 0 && !emptyState) {
+        const message = document.createElement("p");
+        message.id = "empty-state";
+        message.className = "empty-state";
+        message.textContent = "Nenhuma cena encontrada. Experimente outros filtros ou termos.";
+        document.getElementById("scene-cards").append(message);
+      } else if (visible > 0 && emptyState) {
+        emptyState.remove();
+      }
+    }
+
+    function selectOption(id, value) {
+      const select = document.getElementById(id);
+      if ([...select.options].some((option) => option.value === value)) select.value = value;
+    }
+
+    filterIds.forEach((key) => document.getElementById(`${key}-filter`).addEventListener("change", updateCards));
+    search.addEventListener("input", updateCards);
+    ["subject", "action", "theme", "light", "environment", "composition"].forEach((id) => {
+      document.getElementById(id).addEventListener("input", buildPrompt);
+      document.getElementById(id).addEventListener("change", buildPrompt);
+    });
+
+    document.querySelectorAll(".adapt-card").forEach((button) => {
+      button.addEventListener("click", () => {
+        const card = button.closest(".scene-card");
+        document.getElementById("subject").value = button.dataset.subject;
+        document.getElementById("action").value = button.dataset.action;
+        selectOption("theme", card.dataset.theme);
+        selectOption("light", card.dataset.light);
+        selectOption("environment", card.dataset.environment);
+        selectOption("composition", card.dataset.composition);
+        buildPrompt();
+        document.getElementById("builder-title").scrollIntoView({ behavior: "smooth", block: "start" });
+        status.textContent = "Cena carregada. Ajuste os elementos para criar sua versão.";
+      });
+    });
+
+    document.getElementById("generate").addEventListener("click", () => {
+      buildPrompt();
+      status.textContent = "Prompt atualizado.";
+    });
+
+    document.getElementById("copy").addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(preview.value);
+        status.textContent = "Prompt copiado para a área de transferência.";
+      } catch {
+        preview.focus();
+        preview.select();
+        status.textContent = "Selecione e copie o prompt.";
+      }
+    });
+
+    buildPrompt();
+    updateCards();
+  </script>
+</body>
+</html>
