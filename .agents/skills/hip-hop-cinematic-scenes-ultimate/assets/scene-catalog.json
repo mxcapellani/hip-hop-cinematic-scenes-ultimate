@@ -1,0 +1,773 @@
+[
+  {
+    "id": "C001",
+    "number": 1,
+    "source_entry": 1,
+    "title": "Rima no beco",
+    "description_pt": "Um rapper rimando sob luzes vermelhas em um beco com fumaça, estilo videoclipe underground.",
+    "prompt_en": "3D cinematic hip hop scene, rapper performing in a dark alley with red lights and smoke, fisheye lens, moody atmosphere, detailed textures, urban vibe, graffiti walls, cinematic lighting, Sony A7R IV, 35mm lens, shallow depth of field, volumetric light, cinematic grain, Unreal Engine render style\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "34125493f89a7a00eb6e16d8bb7213b25cc4c5cd341ef12599fe2109b25ecc7b"
+  },
+  {
+    "id": "C002",
+    "number": 2,
+    "source_entry": 2,
+    "title": "Duas pessoas Break Dance",
+    "description_pt": "Duas pessoas dançando break no meio da rua sob chuva, neon refletindo no chão.",
+    "prompt_en": "street dance scene under rain, neon reflections, hip hop breakdancers performing on wet asphalt, cinematic camera, dramatic lighting, reflections, vibrant atmosphere, Tokyo street vibe, Unreal Engine 5, high contrast, lens flare, 50mm cinematic composition\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "7e7585adfd97b163142cb9d5ea11a9cc077f0f2e0348969b845e29375717adc9"
+  },
+  {
+    "id": "C003",
+    "number": 3,
+    "source_entry": 3,
+    "title": "Grupo de Rap",
+    "description_pt": "Grupo de rappers em frente a carros antigos, fumaça e luzes de rua.",
+    "prompt_en": "hip hop group posing in front of vintage cars, streetlights, smoke in the air, cinematic atmosphere, 3D render, golden hour light, detailed urban setting, gritty and stylish, shallow depth of field, moody cinematic tone\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "carros-velocidade"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "ec4a29be3b1bf0e387e3e7e4f5330230dfb18bc174c854b41bc9cea03aede66a"
+  },
+  {
+    "id": "C004",
+    "number": 4,
+    "source_entry": 4,
+    "title": "Flex na loja à noite",
+    "description_pt": "Flex na loja de noite — pegada de rua, ângulo baixo e muito drip.",
+    "prompt_en": "low-angle cinematic shot inside neon-lit convenience store at night, featuring [insert here] wearing baggy jeans, Timberland boots, loose streetwear shirt, holding a Gatorade bottle, surrounded by soda crates and glowing fridges, checkered black and white floor, warm yellow lighting, realistic reflections, fisheye perspective, GTA-style 3D render, Unreal Engine 5, high detail, urban vibe, cinematic composition\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk"
+    ],
+    "placeholders": [
+      "[insert here]"
+    ],
+    "prompt_sha256": "845c7a54983d31cc078451e7fd6447699d4bcb1b315f5b7c87eeb1af1ca76d41"
+  },
+  {
+    "id": "C005",
+    "number": 5,
+    "source_entry": 5,
+    "title": "Subida futurista no metrô",
+    "description_pt": "Subindo a escada rolante de um túnel futurista verde, vibe cyberpunk e ângulo cinematográfico de baixo.",
+    "prompt_en": "low-angle cinematic shot of [insert here] ascending an escalator inside a futuristic green-lit tunnel, cyberpunk aesthetic, dynamic composition, dramatic perspective, glowing ceiling lights, long corridor depth, vibrant neon reflections, Unreal Engine 5 render, fisheye lens, ultra-detailed fabric textures, modern streetwear outfit, cinematic lighting, high contrast, surreal atmosphere\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "efeitos-visuais"
+    ],
+    "placeholders": [
+      "[insert here]"
+    ],
+    "prompt_sha256": "f5a0e28623ee38ea28c0b19c04c7cace58bd11a116f3ad26c3d0640acc21d5e1"
+  },
+  {
+    "id": "C006",
+    "number": 6,
+    "source_entry": 6,
+    "title": "Cyberpunk no banco de trás",
+    "description_pt": "Pessoa com visual cyberpunk relaxando no banco de trás do carro, luzes neon passando pela janela, vibe futurista de rua.",
+    "prompt_en": "cinematic low-angle shot of [insert here] sitting in the backseat of a car at night, cyberpunk vibe, neon green and yellow lighting, fisheye lens, gritty futuristic city outside the window, character with short red hair and edgy streetwear, bandaged legs, boots, magazines and gadgets scattered around, vibrant reflections, Unreal Engine 5 render, cinematic atmosphere, high detail, urban nightlife energy\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "carros-velocidade"
+    ],
+    "placeholders": [
+      "[insert here]"
+    ],
+    "prompt_sha256": "514ee1882558360a4b281e95453c69467e5112d245c610f51d60ec7ab3a66b26"
+  },
+  {
+    "id": "C007",
+    "number": 7,
+    "source_entry": 7,
+    "title": "Green Lens Energy",
+    "description_pt": "Pessoa sob luz verde intensa enquadrando a câmera com as mãos, vibe urbana e misteriosa.",
+    "prompt_en": "close-up shot of [insert here] under intense green lighting, hands framing the camera in a dynamic fisheye perspective, urban night vibe, moody expression, slight distortion for depth, gritty street aesthetic, cinematic shadows, surreal glow, Unreal Engine 5 render, high detail, high contrast, cyber-street energy, bold atmosphere\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "retratos-silhuetas",
+      "efeitos-visuais"
+    ],
+    "placeholders": [
+      "[insert here]"
+    ],
+    "prompt_sha256": "1be785bc9f24611f6465fb23fc4c8d6bbd1fa6e693d750cbb5ebe43b1436a3c9"
+  },
+  {
+    "id": "C008",
+    "number": 8,
+    "source_entry": 8,
+    "title": "Crimson Smoke",
+    "description_pt": "Mulher jovem coberta de tatuagens acende um cigarro sob luz vermelha intensa, cercada por azulejos frios, atmosfera rebelde e introspectiva.",
+    "prompt_en": "A young woman with pale skin and dark shoulder-length hair stands in a narrow tiled room, her body covered in eclectic tattoos that catch the flickering light of a small flame as she lights a cigarette. The scene glows in deep crimson and amber tones, the walls reflecting the heat of the color, creating a claustrophobic yet intimate mood. Her gaze is distant, defiant, and thoughtful, framed by soft shadows that emphasize her angular features. The cigarette smoke curls upward, mixing with the red haze that fills the air, while the dim light wraps around her like a fever dream — raw, urban, and cinematic.\n",
+    "themes": [
+      "cidade-cyberpunk",
+      "retratos-silhuetas"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "f83ce5ff394ef9e8b3047049a4f71f5289e6c3905dc3603b10f12f1b9b503c3b"
+  },
+  {
+    "id": "C009",
+    "number": 9,
+    "source_entry": 9,
+    "title": "Neon Drift",
+    "description_pt": "Mulher sente o vento ao sair pela janela de um carro em movimento dentro de um túnel, luzes laranja e azuis se cruzam criando um clima de liberdade noturna e euforia silenciosa.",
+    "prompt_en": "A young woman leans out of a moving car window inside a dimly lit tunnel, her face tilted upward, eyes closed, hair swept back by the rush of air. The tunnel glows with streaks of amber and blue light reflecting off the car’s metallic surface, creating a cinematic contrast between warmth and cool neon. The soft contours of her face catch both colors, orange on one side, electric blue on the other, as if caught between two worlds. Her expression is serene yet charged with emotion, a fleeting moment of freedom suspended in motion. The tunnel’s vanishing lights stretch into the distance, amplifying the sense of velocity and escape.\n",
+    "themes": [
+      "cidade-cyberpunk",
+      "carros-velocidade",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "63ce68b699795b76e0fad0adae891294cb5a85559dc6f454c1eb527a5ed6a861"
+  },
+  {
+    "id": "C010",
+    "number": 10,
+    "source_entry": 10,
+    "title": "Red Horizon",
+    "description_pt": "Figura solitária caminha entre pedras sob uma névoa vermelha intensa, o corpo envolto por uma luz azul etérea que contrasta com o calor ao redor, criando uma atmosfera surreal e introspectiva.",
+    "prompt_en": "A lone figure walks through a rocky landscape shrouded in dense crimson fog, their silhouette glowing with a cold blue aura that cuts sharply against the red backdrop. The person wears a loose jacket and dark pants, their face hidden in shadow, appearing almost spectral under the diffused light. Sparse vegetation and scattered stones fade into the haze, while the air seems thick, glowing as if ignited from within. The contrast between the icy blue of the figure and the searing red of the atmosphere evokes a haunting, dreamlike tension — a moment suspended between isolation and transcendence.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "portais-cosmico"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "a14e4cfb42901ce24276be94c7863aeac6bc722be8b000f28e539fdf857079e6"
+  },
+  {
+    "id": "C011",
+    "number": 11,
+    "source_entry": 11,
+    "title": "Skyline Mirage",
+    "description_pt": "Carro esportivo branco sobre um deserto salino sob céu azul profundo e nuvens densas, reflexos metálicos intensos e atmosfera surreal de velocidade imóvel e silêncio absoluto.",
+    "prompt_en": "A sleek white sports car rests on an endless salt flat under a vast cobalt-blue sky scattered with glowing white clouds. The camera angle is low and dramatic, emphasizing the polished chrome rims and smooth aerodynamic curves reflecting the light like liquid silver. The horizon stretches infinitely, blurring the boundary between earth and sky. Sunlight strikes the car’s surface with a crystalline sharpness, creating dazzling highlights and mirrored reflections on the pristine ground. The air feels still, the silence immense, as if time pauses in this hyperreal dreamscape — a symphony of steel, sky, and solitude.\n",
+    "themes": [
+      "carros-velocidade",
+      "surrealismo-simbolismo"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "7040081e04d3b2cf7f28d3b5a69d55448e280b4e80ac04d21e4136a84e37ab2d"
+  },
+  {
+    "id": "C012",
+    "number": 12,
+    "source_entry": 12,
+    "title": "Neon Velocity",
+    "description_pt": "Carro esportivo acelera pela cidade à noite, luzes de néon azul e vermelho refletindo na lataria, criando uma cena distorcida e cheia de movimento, energia e adrenalina urbana.",
+    "prompt_en": "A sports car speeds through a neon-lit city street at night, its taillights glowing in intense red circles that blur into streaks of motion. Blue underglow lights illuminate the asphalt, casting electric reflections across the car’s metallic surface. The camera captures the scene from a low, tilted angle, emphasizing the aerodynamic spoiler and the sense of acceleration as the vehicle cuts through the night. Around it, the city blurs into abstract lines of orange, white, and blue — a symphony of light and speed. The air hums with energy, as if the car itself were tearing through dimensions, chasing the pulse of the city.\n",
+    "themes": [
+      "cidade-cyberpunk",
+      "carros-velocidade",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "6e8dd93440a93dff2c32ed42279d66880eb183172db93e2a8d3e0268889bcef0"
+  },
+  {
+    "id": "C013",
+    "number": 13,
+    "source_entry": 13,
+    "title": "Steel Silence",
+    "description_pt": "Pessoa de cabelo curto platinado em um elevador metálico, sob luz fria e esverdeada, segura uma câmera com olhar firme e introspectivo, atmosfera urbana e tensa.",
+    "prompt_en": "A person with short platinum hair stands inside a stainless steel elevator, the fisheye lens distorting the narrow space and amplifying the metallic reflections. Dressed in a fitted black outfit, they hold a camera loosely at their side, their gaze sharp and contemplative beneath the dim greenish fluorescent light. The walls gleam with scratches and subtle graffiti, one red tag scrawled behind them like a silent mark of rebellion. Shadows fall across their face, highlighting angular features and the glint of large earrings. The air feels heavy and enclosed, the scene vibrating with quiet tension — a cinematic still caught between isolation and defiance.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "retratos-silhuetas",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "1743451e4d98bca2b72aced6a598ea93b7b444028c433ab2c0e5024676e2f426"
+  },
+  {
+    "id": "C014",
+    "number": 14,
+    "source_entry": 14,
+    "title": "Parallel Static",
+    "description_pt": "Dois homens vestidos com longos casacos de couro preto em escadas rolantes paralelas, luz verde fria e atmosfera futurista e silenciosa, como um frame suspenso de um thriller distópico.",
+    "prompt_en": "Two men dressed in long black leather coats occupy parallel escalators in an empty underground station. One stands upright, expression stoic and unyielding, while the other sits casually on the moving steps, wearing dark sunglasses that catch the sterile light above. The scene is bathed in a muted green tint, the metallic reflections of the escalators creating a clinical, almost surreal symmetry. Their presence feels deliberate and still, as if time has paused between them. The polished steel surfaces and dim fluorescent glow evoke a futuristic tension — a cinematic tableau of quiet confrontation and urban isolation.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "4f47f9df0d77f3800a8aeec8742093e4f08d730898f6f81ff403ade4779c567f"
+  },
+  {
+    "id": "C015",
+    "number": 15,
+    "source_entry": 15,
+    "title": "Concrete Reverie",
+    "description_pt": "Pessoa sentada na calçada ao entardecer, vestindo jeans largos e sapatos metálicos, envolta por tons frios urbanos e a luz dourada do pôr do sol refletindo nos prédios altos.",
+    "prompt_en": "A young person sits on the edge of a city sidewalk at dusk, surrounded by towering buildings that catch the last golden light of the setting sun. Their outfit — oversized acid-washed denim, chunky metallic shoes, and layered streetwear — contrasts sharply with the muted tones of the concrete around them. A soft halo of light outlines their hair as the sky fades from peach to indigo. The fisheye perspective exaggerates the urban geometry, giving the scene a cinematic distortion. Shadows stretch long across the pavement, while the faint city glow begins to rise — a quiet, reflective moment suspended in the transition between day and night.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "8f84a9f040da3b57c6364bacd127ea62c47a8793a935c997b8d768de03655a76"
+  },
+  {
+    "id": "C016",
+    "number": 16,
+    "source_entry": 16,
+    "title": "Concrete Unity",
+    "description_pt": "Três jovens vestidos com moletons pretos idênticos em uma escada de concreto curvada, expressões serenas e postura confiante sob luz noturna suave, transmitindo coesão e força de grupo.",
+    "prompt_en": "Three young people wearing matching black hoodies and loose sweatpants sit and stand on a curved concrete staircase at night. The letters on their outfits catch the dim streetlight, softly glowing against the muted grey of the structure. One leans casually on the railing, another stands tall at the top of the steps, while the third sits near the bottom, gazing toward the camera with calm defiance. The cool ambient light from nearby buildings reflects off the polished surfaces, blending with faint shadows of glass and metal. The composition feels cinematic and composed — an urban portrait of unity, strength, and quiet confidence.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "retratos-silhuetas"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "92d56ce8f3b1560d3a805b6b9c91e2efb1653684f8340449eeee0ffd6e9131e9"
+  },
+  {
+    "id": "C017",
+    "number": 17,
+    "source_entry": 17,
+    "title": "Midnight Call",
+    "description_pt": "Homem dentro de cabine telefônica antiga em noite chuvosa, luzes urbanas borradas ao fundo e gotas escorrendo pelo vidro, atmosfera melancólica e introspectiva.",
+    "prompt_en": "A man stands inside a rain-soaked phone booth at night, his hand resting thoughtfully against his face as city lights blur beyond the fogged glass. The window is streaked with raindrops and graffiti, diffusing the warm glow of passing cars into soft circles of amber and green. He wears a dark leather jacket over a deep red sweater, the dim overhead light carving gentle shadows across his features. Outside, the world feels distant and unfocused, while inside, the confined space hums with quiet solitude. The mood is cinematic and reflective — a frozen moment of silence amid the pulse of the city.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "retratos-silhuetas"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "02a83f782eb978f825f930439f8458dfe20e4e798ac2b82b4e2ce0cfe829ab90"
+  },
+  {
+    "id": "C018",
+    "number": 18,
+    "source_entry": 18,
+    "title": "Ashes of Identity",
+    "description_pt": "Homem de terno cinza com a cabeça coberta por um pano vermelho, diante de uma mala em chamas em meio a um terreno escuro e desolado, atmosfera surreal e simbólica de perda e renascimento.",
+    "prompt_en": "A man in a light gray suit and red tie stands motionless on a dark, barren landscape, his head wrapped in a vivid red cloth that flutters slightly in the wind. In front of him, an old suitcase burns intensely, flames curling upward and casting orange light against the surrounding black soil. Behind him rises a mound of coal or ash, stark against the overcast sky. The contrast between the pristine suit, the violent fire, and the lifeless ground creates a haunting visual tension. The scene feels allegorical — a cinematic portrait of identity consumed, destruction meeting calm composure in an otherworldly silence.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "929ba05f8cdff7d376c52fffe707251048779603e9237aa2e1c89923949d36d3"
+  },
+  {
+    "id": "C019",
+    "number": 19,
+    "source_entry": 19,
+    "title": "Frozen Broadcast",
+    "description_pt": "Homem sentado em uma poltrona no meio de uma paisagem congelada, observando uma televisão em chamas sob o crepúsculo azul, iluminado apenas por uma lâmpada solitária ao lado, clima surreal e contemplativo.",
+    "prompt_en": "A man sits in an armchair on a vast frozen landscape under the fading blue light of dusk. Beside him, a lone floor lamp glows warmly, casting a soft halo on the snow. In front of him, an old television burns with bright orange flames, the fire flickering against the endless horizon of ice. The man watches silently, his silhouette outlined by the contrast of warm and cold light. The surrounding emptiness stretches infinitely, sky melting into frost. The image feels dreamlike and symbolic — a meditation on isolation, decay, and the quiet absurdity of warmth in a frozen world.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "ffd403175a190190e9249d1a57c9dc1f5c01f072fdd75c68088e287fe2b0352c"
+  },
+  {
+    "id": "C020",
+    "number": 20,
+    "source_entry": 20,
+    "title": "The Burning Threshold",
+    "description_pt": "Homem de pijama diante de uma porta em chamas no meio de uma floresta coberta de neve, atmosfera surreal que mistura o frio absoluto do ambiente com o calor intenso do fogo.",
+    "prompt_en": "A man in plaid pajama pants and a white tank top stands barefoot in deep snow, facing a lone door engulfed in flames at the center of a dark winter forest. The fire burns vividly against the pale blue of the snow, its glow reflecting on the frozen ground and the surrounding trees heavy with frost. Smoke rises into the still night air, blurring the boundary between the burning doorway and the shadows beyond. The man’s posture is tense yet entranced, as if standing before a portal between worlds. The silence of the forest contrasts with the violent crackle of fire — a haunting, cinematic vision of warmth meeting oblivion.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "c7ac33561efbb198abf9687128771f418213c7e3386aa6e104dc297f4f699159"
+  },
+  {
+    "id": "C021",
+    "number": 21,
+    "source_entry": 21,
+    "title": "The Last Broadcast",
+    "description_pt": "Homem sentado em uma poltrona observa calmamente uma explosão colossal no horizonte, segurando um controle remoto enquanto o céu é tomado por tons alaranjados e fumaça densa.",
+    "prompt_en": "A man sits in a reclining chair facing a massive nuclear explosion blooming on the distant horizon. The sky glows in deep shades of orange and crimson, the mushroom cloud rising like a burning monolith that engulfs the scene in blinding light. The man’s silhouette is still, outlined by the fiery radiance, his hand loosely holding a remote control as if watching a television show. The contrast between his calm posture and the apocalyptic spectacle ahead creates a haunting irony — a cinematic vision of detachment and awe amid destruction. The air shimmers with heat, the world dissolving into light and silence.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "15e879d5c228d8c69c455c6df4ad816a8f0d6c583ad53fbe3b432fec4d19c3fc"
+  },
+  {
+    "id": "C022",
+    "number": 22,
+    "source_entry": 22,
+    "title": "Diamond Trigger",
+    "description_pt": "Homem elegante em traje de gala segura uma arma cravejada de diamantes diante do rosto, olhar intenso e fundo azul sólido ao fundo, atmosfera de luxo e perigo contido.",
+    "prompt_en": "A man in a black tuxedo and bow tie stands against a pristine blue background, holding a revolver encrusted with diamonds directly in front of his face. The glittering weapon reflects the light in a cascade of sharp sparkles, framing his piercing blue eyes that stare straight through the viewer. A jeweled brooch gleams on his lapel, echoing the opulent detail of the gun. The composition is perfectly symmetrical, polished, and theatrical, blending elegance with menace. Every element — the shine, the posture, the calm intensity — evokes a cinematic fusion of glamour and danger frozen in time.\n",
+    "themes": [
+      "retratos-silhuetas"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "53aa4aa7ade196dad8842a53b7c059b01ba697c2197dd3cb93a2956bf25eae11"
+  },
+  {
+    "id": "C023",
+    "number": 23,
+    "source_entry": 23,
+    "title": "Spectral Rider",
+    "description_pt": "Cavaleiro com armadura prateada montado em um cavalo branco surge de um fundo escuro em movimento etéreo, espada erguida e rastro de luz nebulosa criando uma sensação de fantasmagoria e poder antigo.",
+    "prompt_en": "A lone knight in shimmering silver armor rides a white horse emerging from the darkness, his sword raised as ethereal light trails swirl around them. The scene blurs with motion, the rider and steed appearing almost spectral, dissolving into ribbons of mist and color. The horse’s white mane flows like smoke, while faint reflections of crimson and gold streak through the shadowed air. The composition feels painterly and dreamlike, suspended between motion and stillness — a ghostly apparition of courage and legend illuminated against the void.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "13b19925b8b58268431cbeafa845c87cd2178222c7fb2bd7d73d04f13d12c30d"
+  },
+  {
+    "id": "C024",
+    "number": 24,
+    "source_entry": 24,
+    "title": "After the Fire",
+    "description_pt": "Silhueta solitária observa uma casa em chamas à distância sob um céu noturno profundo, o fogo refletindo em poças d’água e criando um contraste hipnótico entre destruição e quietude.",
+    "prompt_en": "A lone figure stands motionless before a burning house in the middle of an open field at night. The flames consume the structure, spilling golden light across the wet ground where reflections ripple in molten hues of orange and red. Smoke rises into the indigo sky, dissolving into the stars as faint streaks of light echo through the darkness. The silhouette of the observer is calm and distant, outlined by the glow of destruction. The scene feels both intimate and apocalyptic — a cinematic moment of silence, where warmth and devastation merge under the vast, cold night.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "ed8aa177beb45b92a1a61b23c9ac95066d85b5f9b952f59db2d8ee0b04ecb14e"
+  },
+  {
+    "id": "C025",
+    "number": 25,
+    "source_entry": 25,
+    "title": "Golden Descent",
+    "description_pt": "Pessoa encostada em um carro clássico observa um imenso feixe de luz dourada que corta o céu noturno, atmosfera surreal e contemplativa envolta em névoa e calor etéreo.",
+    "prompt_en": "A solitary figure leans against a vintage car parked in the middle of a misty field, illuminated by a colossal golden beam of light descending from the sky. The car’s silhouette glows softly in the haze, its curves reflecting the surreal radiance that splits the darkness. The surrounding air shimmers with particles of dust and fog, diffusing the beam into a warm, celestial glow. The figure appears calm, almost reverent, gazing toward the source as if witnessing something divine or otherworldly. The ground glistens with subtle reflections, and the entire scene vibrates with an eerie, cinematic stillness — a moment suspended between reality and transcendence.\n",
+    "themes": [
+      "carros-velocidade",
+      "surrealismo-simbolismo",
+      "portais-cosmico",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "b53e70f4d4f4ce98c63fb159863d1560ff28a15ce9541b8a54aaf0bb8af2e080"
+  },
+  {
+    "id": "C026",
+    "number": 26,
+    "source_entry": 26,
+    "title": "The Orange Gate",
+    "description_pt": "Um homem em pé diante de um portal laranja brilhante, com um carro antigo próximo, envoltos em névoa densa e reflexos quentes que criam um clima de mistério e transição.",
+    "prompt_en": "A solitary man stands before a glowing orange portal that cuts through the heavy night fog, its light casting surreal reflections on the wet ground. Beside him, an old car sits half-illuminated, its headlights faintly piercing the mist. The entire scene is drenched in warm amber tones that fade into surrounding darkness, creating an atmosphere of eerie stillness and anticipation. The man’s silhouette is outlined against the blazing oval of light, as if poised between two realities. The air feels thick and electric — a cinematic moment frozen on the edge of the unknown.\n",
+    "themes": [
+      "carros-velocidade",
+      "surrealismo-simbolismo",
+      "portais-cosmico",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "bd7f5719869b3d2c66b08ababab61f60d2e25f2dbf0ce22385ebe849a3d66f7d"
+  },
+  {
+    "id": "C027",
+    "number": 27,
+    "source_entry": 27,
+    "title": "Neon Solitude",
+    "description_pt": "Pessoa dentro de um carro à noite, envolta por luzes vermelhas e verdes contrastantes, expressão melancólica e atmosfera introspectiva de solidão urbana.",
+    "prompt_en": "A person sits inside a parked car at night, bathed in the clash of red and green neon lights filtering through the windshield. Their face rests on folded arms, eyes distant and contemplative, as streaks of passing headlights cut through the darkness outside. The glow reflects off the car’s interior surfaces, painting everything with a cinematic tension between warmth and cold. The world beyond the glass feels fast and indifferent, while inside the car, time seems suspended. The mood is intimate and moody — a quiet portrait of reflection amid the electric pulse of the city night.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "carros-velocidade"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "bc1430b5ff39d90bed46843451c968db17d4c47082abc663cbf24a9c2e8bcf21"
+  },
+  {
+    "id": "C028",
+    "number": 28,
+    "source_entry": 28,
+    "title": "Crimson Drive",
+    "description_pt": "Pessoa dentro de um carro iluminado por uma luz vermelha intensa, olhar fixo e sereno enquanto a escuridão ao redor cria uma atmosfera de isolamento e mistério noturno.",
+    "prompt_en": "A person sits in the backseat of a car at night, their face and arms bathed in deep crimson light spilling from the interior. The rest of the scene dissolves into darkness, the glowing red windows carving their silhouette against the void. They rest casually, one arm stretched along the seat, eyes steady and contemplative, as if caught in a moment between motion and stillness. The car’s cabin feels like a floating capsule of heat and color, suspended in endless black. The atmosphere is cinematic and intimate — a portrait of quiet defiance wrapped in neon solitude.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "carros-velocidade",
+      "retratos-silhuetas"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "3bd0f4c197fd6b4facb3ea77f99be150c5ec9f17d74fe25bc3c61377a3f30a4d"
+  },
+  {
+    "id": "C029",
+    "number": 29,
+    "source_entry": 29,
+    "title": "Red Reverie",
+    "description_pt": "Pessoa dentro de um carro à noite, iluminada por uma luz vermelha intensa que delineia o perfil e cria uma atmosfera sensual, introspectiva e cinematográfica.",
+    "prompt_en": "A person sits in the driver’s seat at night, their profile illuminated by a deep red glow that spills across the car’s interior. The light caresses the sharp lines of their face and jaw, catching on strands of hair that fall loosely over their eyes. One hand rests near their mouth, the gesture thoughtful and calm, while the darkness outside swallows the rest of the scene. The red hue feels both intimate and dangerous, creating an atmosphere thick with emotion and stillness. It’s a cinematic moment of quiet intensity — a portrait of reflection under the pulse of neon light.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "carros-velocidade",
+      "retratos-silhuetas"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "c493ede9fc83957af24ae4783c95cec7c1cdd3fb96720e34aa05653f5200014f"
+  },
+  {
+    "id": "C030",
+    "number": 30,
+    "source_entry": 30,
+    "title": "Red Corridor",
+    "description_pt": "Silhueta de um homem parada à porta entreaberta iluminada por uma luz vermelha intensa, contraste entre sombra e cor criando um clima de suspense e mistério psicológico.",
+    "prompt_en": "A man stands partially silhouetted in a narrow hallway, framed by the glow of a deep red light spilling from a half-open door. His figure is dark against the vivid hue, the outlines of his body softly dissolving into shadow. The air feels still, heavy with tension, as if caught between hesitation and revelation. The red illumination floods the small space with a cinematic intensity, evoking both warmth and danger. Beyond the door, only darkness waits, and the man’s stance suggests a moment of decision — a quiet, haunting scene frozen in the threshold of uncertainty.\n",
+    "themes": [
+      "cidade-cyberpunk",
+      "retratos-silhuetas"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "86839ca40a98dd618daad96532f0d3720c0511377e0a6dd0091f2b71182f20d0"
+  },
+  {
+    "id": "C031",
+    "number": 31,
+    "source_entry": 32,
+    "title": "Scarlet Silence",
+    "description_pt": "Silhueta feminina sentada em uma cadeira diante de uma parede iluminada por luz vermelha intensa, postura relaxada e atmosfera sensual e misteriosa.",
+    "prompt_en": "A woman’s silhouette sits elegantly on a chair in front of a glowing red backdrop, her body outlined in the contrast between light and shadow. The pose is poised yet effortless, one leg lifted slightly as she leans back in quiet confidence. The surrounding room is swallowed by darkness, the crimson light bleeding softly into the edges, creating an aura of tension and allure. Dust particles drift through the glow like faint embers, and the composition feels cinematic — a moment suspended in sensual stillness, charged with mystery and quiet power.\n",
+    "themes": [
+      "retratos-silhuetas"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "86c936c160798689add4098a3121219247de61e6726e058313439b33d0076e5d"
+  },
+  {
+    "id": "C032",
+    "number": 32,
+    "source_entry": 33,
+    "title": "Crimson Spotlight",
+    "description_pt": "Homem em pé sob um feixe de luz vermelha intensa em um estúdio escuro, postura relaxada e olhar confiante, atmosfera minimalista e cinematográfica.",
+    "prompt_en": "A man stands alone in a dark studio, bathed in a focused red spotlight that radiates softly around him like a halo. He wears dark clothing and sunglasses, hands in his pockets, exuding quiet confidence and composure. The gradient of red light fades into deep black at the edges, creating a stark sense of isolation and control. His shadow stretches beneath him, merging with the surrounding darkness. The scene feels stylized and deliberate — a minimalist portrait of presence, attitude, and cinematic intensity suspended in glowing crimson.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "retratos-silhuetas"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "c22e8f5fa952c298521c647a8eba9b119222ce95898145306b666767e325507e"
+  },
+  {
+    "id": "C033",
+    "number": 33,
+    "source_entry": 35,
+    "title": "Echoes of Lonely",
+    "description_pt": "Homem em pé sob projeções vermelhas da palavra “LONELY” em um estúdio escuro, usando óculos escuros e expressão neutra, cena carregada de solidão e introspecção visual.",
+    "prompt_en": "A man stands in a dimly lit studio, his body and the walls around him covered in red projected text repeating the word “LONELY.” The bold letters ripple across his face and clothes, creating a hypnotic rhythm of light and shadow. He wears dark sunglasses and casual streetwear, standing still amid the pulsating red glow. His shadow stretches behind him, echoing his form against the glowing wall. The atmosphere feels modern, cinematic, and deeply introspective — a striking visual metaphor for isolation illuminated through digital light.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "retratos-silhuetas",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "bd986cffdac3b2f1e6623bd06875fc35ef7d49e38afdbb088e59f662fc09aa90"
+  },
+  {
+    "id": "C034",
+    "number": 34,
+    "source_entry": 36,
+    "title": "Golden Solitude",
+    "description_pt": "Silhueta masculina iluminada por um halo dourado intenso em meio à escuridão, gesto delicado e atmosfera contemplativa e espiritual.",
+    "prompt_en": "A man stands alone in a dark room, surrounded by a deep void while a beam of golden light radiates from behind him, forming a glowing halo around his silhouette. His hand is gently raised toward his face, fingers catching the edge of the light as if tracing its warmth. The air is still, thick with dust that glimmers faintly in the illumination. Shadows fall softly across his form, amplifying the ethereal quality of the scene. The contrast between darkness and light evokes introspection and transcendence — a cinematic portrait of quiet revelation.\n",
+    "themes": [
+      "retratos-silhuetas",
+      "surrealismo-simbolismo"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "5395c18899d6ae5dd3a0344eff2df5292d6d97b0db24884fdcee8f66a00e7ae5"
+  },
+  {
+    "id": "C035",
+    "number": 35,
+    "source_entry": 37,
+    "title": "Red Frame",
+    "description_pt": "Silhueta feminina sentada em uma poltrona diante de uma moldura luminosa vermelha, composição minimalista e atmosfera intensa de mistério e poder silencioso.",
+    "prompt_en": "A woman sits perfectly centered in a modern armchair, her silhouette framed by a large rectangular panel of glowing red light. The contrast between her dark outline and the vivid backdrop creates a striking sense of depth and control. Her posture is calm, legs crossed, hands resting softly, exuding quiet authority. The polished floor reflects the crimson hue, adding a subtle shimmer beneath her feet. The scene feels theatrical and deliberate — a cinematic study of stillness, strength, and enigmatic allure within a world of color and shadow.\n",
+    "themes": [
+      "retratos-silhuetas"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "db4fd21671e58e57f442e8f6758654a79cf361267c7c7327fec3f58bdc753f49"
+  },
+  {
+    "id": "C036",
+    "number": 36,
+    "source_entry": 38,
+    "title": "Eyes in the Dark",
+    "description_pt": "Retrato de uma pessoa parcialmente coberta por sombras, com apenas os olhos iluminados por um feixe de luz quente, atmosfera enigmática e teatral.",
+    "prompt_en": "A close-up portrait of a person standing against heavy amber curtains, their face mostly engulfed in darkness except for a narrow band of golden light that cuts across their eyes. The illumination reveals sharp details — calm intensity, quiet mystery — while the rest of their features fade into shadow. Their dark clothing and hat merge seamlessly with the background, creating a sculptural silhouette. The warm tones of the curtain contrast with the cool depth of the shadow, producing a cinematic interplay between concealment and revelation. The mood is intimate, secretive, and hypnotically still.\n",
+    "themes": [
+      "retratos-silhuetas"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "497be6714ac4e295419ec4349db820e4dfe686625c802fce65b74f88fba5bf2c"
+  },
+  {
+    "id": "C037",
+    "number": 37,
+    "source_entry": 39,
+    "title": "Event Horizon",
+    "description_pt": "Silhueta humana distorcida no centro de um vórtice de luz e cor, movimento onírico e atmosfera de transição entre realidades.",
+    "prompt_en": "A solitary figure drifts within a swirling tunnel of color, their silhouette stretched and blurred as if pulled through a dream. The center glows with soft gradients of blue, amber, and violet, fading into darker tones at the edges that create a sense of infinite depth. The person’s posture is loose, almost weightless, caught between falling and floating. Light bends around them in circular motion, as though reality itself is folding inward. The image feels cosmic and surreal — a cinematic vision of transformation, disorientation, and surrender to the unknown.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "portais-cosmico",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "607220c523628089a754c9b5d7f2a5177b1226c5209ec82962d4c66f3bc7e9fb"
+  },
+  {
+    "id": "C038",
+    "number": 38,
+    "source_entry": 40,
+    "title": "Celestial Frame",
+    "description_pt": "Silhueta humana recortada diante de um círculo de luz em tons de azul e rosa, contraste cósmico e atmosfera etérea de introspecção e transcendência.",
+    "prompt_en": "A lone figure stands against a circular gradient of light that shifts from deep blue to soft pink, surrounded by total darkness. The person’s silhouette is perfectly outlined, head bowed slightly, hands relaxed by their sides, as if suspended in quiet contemplation. The glowing orb behind them resembles a rising planet or an artificial sun, radiating calm energy through smooth color transitions. The composition feels otherworldly and precise — a minimalist, cinematic portrait of solitude and cosmic serenity.\n",
+    "themes": [
+      "retratos-silhuetas",
+      "surrealismo-simbolismo",
+      "portais-cosmico"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "70560f8870f6cb915bbd09a1b120d75f99a5ceb6056a95933a401139eae31fb0"
+  },
+  {
+    "id": "C039",
+    "number": 39,
+    "source_entry": 41,
+    "title": "Echoes of Flight",
+    "description_pt": "Figura humana envolta por pássaros em movimento contra um fundo ardente, atmosfera surreal entre redenção e desintegração.",
+    "prompt_en": "A solitary figure stands motionless against a vivid orange haze, their dark silhouette partially dissolving into the smoky atmosphere. Around them, pale white birds streak across the frame in ghostly motion, wings blurred by light and speed. The contrast between the figure’s stillness and the birds’ kinetic energy evokes a dreamlike tension — freedom versus confinement, spirit versus shadow. Soft teal glows trace the birds’ flight paths, cutting through the heat of the background. The entire scene feels like a fleeting vision, cinematic and poetic, suspended between fire and air.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "d76c35a897221163ee694a574c065164cb850723fb503508364bcd468fa2a557"
+  },
+  {
+    "id": "C040",
+    "number": 40,
+    "source_entry": 42,
+    "title": "Ascension Field",
+    "description_pt": "Figura flutuando sobre um campo iluminado, cercada por uma aura azul e céu noturno profundo — sensação de transcendência e renascimento.",
+    "prompt_en": "A glowing figure levitates above a field of white wildflowers under a deep indigo night sky. A radiant blue aura envelops their silhouette, blurring the line between body and light. The ground below shimmers with soft illumination, as if touched by celestial energy. Faint trails of starlight streak across the sky, enhancing the ethereal stillness. The atmosphere is mystical and cinematic — evoking transcendence, peace, and the quiet power of otherworldly transformation.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "portais-cosmico",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "80cbed6d261992e85b260527b904bc3ade973400cf44455735743a5245563578"
+  },
+  {
+    "id": "C041",
+    "number": 41,
+    "source_entry": 43,
+    "title": "Solar Eclipse",
+    "description_pt": "Silhueta parcialmente iluminada diante de um grande círculo vermelho, composição minimalista com atmosfera densa e introspectiva.",
+    "prompt_en": "A person stands in front of a massive glowing red circle, their face half-illuminated by its eerie light. The background is dark and atmospheric, creating a striking contrast between shadow and radiance. The red orb dominates the composition, resembling a blood moon or solar eclipse. The subject’s pose is calm and reflective, evoking mystery and emotional gravity. The lighting is cinematic and minimal — evoking themes of isolation, identity, and cosmic intensity.\n",
+    "themes": [
+      "retratos-silhuetas",
+      "surrealismo-simbolismo",
+      "portais-cosmico"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "ecdd286196455a31176dfd3b8e2c9b2456afe3b171cb829adbb5fde76284294d"
+  },
+  {
+    "id": "C042",
+    "number": 42,
+    "source_entry": 44,
+    "title": "Ethereal Path",
+    "description_pt": "Figura envolta em névoa colorida, caminhando por uma luz celestial entre tons de azul, rosa e dourado — sensação de ascensão e sonho.",
+    "prompt_en": "A glowing silhouette walks through a surreal fog, surrounded by soft clouds illuminated in hues of blue, pink, and gold. Light spills from above, cascading over the figure like a divine beam, creating a dreamlike gradient that blurs reality and imagination. The person’s outline is hazy, almost dissolving into the radiant mist. The scene feels ethereal, cinematic, and introspective — a visual metaphor for transcendence, awakening, or a passage into another realm.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "portais-cosmico",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "2ef2cfa9007b5ada34f2ae5f82f64201f775877cf5d53db3041f579b30f7a9eb"
+  },
+  {
+    "id": "C043",
+    "number": 43,
+    "source_entry": 45,
+    "title": "Touch of Light",
+    "description_pt": "Pessoa ajoelhada em meio à penumbra, alcançando um feixe de luz rosada — atmosfera mística e introspectiva.",
+    "prompt_en": "A person kneels in a dark room, their profile illuminated by a vivid beam of pink and red light cutting through the smoky air. Dust and mist swirl around the ray, enhancing its ethereal texture. The figure’s hand reaches gently toward the glow, as if trying to touch something divine or untouchable. Shadows and highlights blend softly, creating a cinematic balance between mystery and serenity. The mood is emotional, spiritual, and surreal — a quiet moment of connection between human and light.\n",
+    "themes": [
+      "retratos-silhuetas",
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "72f3e2edf9d5bd952a012122ac122c872792ce614eed4d0249d3cc9a2813ce67"
+  },
+  {
+    "id": "C044",
+    "number": 44,
+    "source_entry": 46,
+    "title": "Neon Eclipse",
+    "description_pt": "Figura solitária sob um círculo de luz multicolorida, postura introspectiva e clima surreal com reflexos metálicos no chão.",
+    "prompt_en": "A solitary figure stands in front of a glowing circular gradient, radiating vivid neon colors from deep red to electric blue and green. The person’s head is bowed slightly, coat draping heavily over their silhouette, creating a powerful contrast between darkness and the ethereal light halo behind them. The ground reflects subtle hints of the rainbow illumination, adding depth and surreal texture. The atmosphere feels cinematic and contemplative — a fusion of melancholy, transcendence, and futuristic serenity.\n",
+    "themes": [
+      "retratos-silhuetas",
+      "surrealismo-simbolismo",
+      "portais-cosmico"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "1bc97351bebcc6262d2c3594b1be8cb129e2ec45ac4dd75b238eb46993d3828a"
+  },
+  {
+    "id": "C045",
+    "number": 45,
+    "source_entry": 47,
+    "title": "Sky Portal",
+    "description_pt": "Pessoa em pé diante de uma imensa janela circular aberta para nuvens azuladas, atmosfera de sonho e contemplação.",
+    "prompt_en": "A person stands on a white platform facing a massive circular window that opens to a sky filled with glowing turquoise clouds. Soft light spills through the round frame, wrapping the subject in a surreal blue radiance. The figure’s posture is calm and reflective, as if suspended between worlds, gazing into infinity. The contrast between the dark room and the luminous clouds creates a cinematic tension — ethereal, introspective, and dreamlike, evoking the feeling of standing before another dimension.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "portais-cosmico"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "b77cc6d977f637dfc9a2718013824ae66b7f608752e3a1e4e68107083bffc44a"
+  },
+  {
+    "id": "C046",
+    "number": 46,
+    "source_entry": 49,
+    "title": "Edge of Sky",
+    "description_pt": "Pessoa solitária sobre uma plataforma azul flutuante cercada por escuridão, com o céu projetado como uma janela para outro mundo.",
+    "prompt_en": "A solitary figure stands on a reflective platform that appears suspended in darkness, facing a massive square projection of a bright blue sky filled with soft clouds. The person wears minimalist clothing and holds a cable or wire, suggesting connection or control. The light from the sky projection illuminates their silhouette, creating a surreal contrast between infinity and confinement. The scene feels cinematic, meditative, and futuristic — a visual metaphor for isolation, introspection, and the desire to escape into the open sky.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "portais-cosmico"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "6271cc66b1498b2d82d2d41e26bc9b82e9886affe03c051d84799263eb00faab"
+  },
+  {
+    "id": "C048",
+    "number": 48,
+    "source_entry": 50,
+    "title": "The Passage",
+    "description_pt": "Uma figura solitária diante de uma porta aberta no meio do oceano noturno, onde céu e mar se fundem em tons de azul profundo e estrelas silenciosas.",
+    "prompt_en": "A solitary person stands before a tall, open doorway that rises from the middle of a calm ocean under a starry night sky. The door frames a view of a serene horizon filled with mist and soft light, creating a surreal connection between sea and sky. The reflection of the door and the figure stretches over the rippling water, evoking themes of transcendence, mystery, and quiet introspection. The lighting is ethereal and cinematic, with deep blues, faint clouds, and starlight shimmering above — a visual metaphor for stepping into the unknown.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "portais-cosmico"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "96516416a082171fc328d4f0940c5e3b8032c23a968d2e0b79932d96a13bf464"
+  },
+  {
+    "id": "C049",
+    "number": 49,
+    "source_entry": 51,
+    "title": "Bloom of Light",
+    "description_pt": "Uma figura iluminada por trás, cercada por flores cintilantes e raios de luz que atravessam a cena, como um despertar cósmico.",
+    "prompt_en": "A luminous figure stands in a field of glowing flowers, backlit by an intense ethereal light that radiates in beams and rainbow flares. The person’s silhouette is soft and angelic, their translucent clothing catching the light as if dissolving into it. The atmosphere is surreal, dreamlike, and celestial — a moment of transcendence where nature, light, and the human form merge into one. The color palette glows with blues, purples, and warm golds, evoking rebirth, serenity, and cosmic beauty.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "portais-cosmico",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "87fb59f81991cb3d4e9e36d74a849bc133f338af4c830bab571715c533813e63"
+  },
+  {
+    "id": "C050",
+    "number": 50,
+    "source_entry": 53,
+    "title": "Embers of Departure",
+    "description_pt": "Uma figura em chamas caminhando sob o crepúsculo azul profundo, observada de longe por uma sombra silenciosa.",
+    "prompt_en": "A cinematic night scene featuring a person walking through a dark open field under a deep blue sky. Their body is partially engulfed in glowing orange flames that flicker and trail behind, casting a surreal light on the ground. In the foreground, the silhouette of another figure watches from the shadows, blurred and distant. The atmosphere is haunting and poetic, evoking themes of loss, transformation, and the burning remnants of memory. The contrast between the cool blue tones and the intense fire creates a striking emotional duality.\n",
+    "themes": [
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "914d153b21656839057af7284e3da39fcbf377a30b7eb21f4db8092a8b7e6d31"
+  },
+  {
+    "id": "C051",
+    "number": 51,
+    "source_entry": 54,
+    "title": "Inner Noise",
+    "description_pt": "Um homem imóvel com os braços cruzados enquanto versões borradas de si mesmo giram ao redor — um retrato visual da confusão e do turbilhão interno.",
+    "prompt_en": "A man stands still in the center of a dimly lit room, arms crossed, wearing a white tank top and gold chain. Around him, blurred duplicates of himself move in circular motion, creating a sense of chaos, anxiety, and inner conflict. The main figure is sharp and calm, contrasting with the motion blur surrounding him. The lighting is soft and cinematic, with a cool, desaturated tone that emphasizes isolation and introspection. The image evokes themes of identity, mental turbulence, and emotional overload.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "retratos-silhuetas",
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "41110c9b1d931a418ff94b2355b9be64e0d90856340b995039fde4962e4bcd3b"
+  },
+  {
+    "id": "C052",
+    "number": 52,
+    "source_entry": 55,
+    "title": "Digital Scream",
+    "description_pt": "Um retrato fragmentado de um homem com a boca multiplicada em telas, gritando dentro de um colapso digital — expressão bruta e distorcida de identidade e raiva.",
+    "prompt_en": "A surreal portrait of a man wearing a black leather jacket and dark turtleneck, standing under moody red and pink lighting. His face is partially obscured by a horizontal band of distorted screens showing multiple close-ups of his open mouth screaming. The overlapping visuals create a chaotic digital effect, symbolizing frustration, identity breakdown, and the clash between human emotion and media distortion. The atmosphere is cyberpunk-inspired, raw, and expressive — blending portrait photography with glitch art and psychological tension.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "cidade-cyberpunk",
+      "retratos-silhuetas",
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "e9c37aa987a599226cbaa8b446ecf5facc73125347989602366c2abe64ca1085"
+  },
+  {
+    "id": "C053",
+    "number": 53,
+    "source_entry": 56,
+    "title": "Disoriented Warmth",
+    "description_pt": "Um retrato enevoado de um homem em movimento, vestindo um suéter laranja felpudo — calor e confusão coexistindo no mesmo instante.",
+    "prompt_en": "A surreal portrait of a man wearing a soft, fuzzy orange sweater and a black durag, captured mid-motion with intentional blur. His head moves rapidly, creating a ghostly double-exposure effect, while his hands remain relaxed and expressive. The background is a muted teal gradient, adding a dreamy, painterly feel. The soft lighting contrasts the dynamic motion, blending warmth and disorientation — evoking a sense of inner turbulence hidden behind calm textures.\n",
+    "themes": [
+      "hip-hop-streetwear",
+      "retratos-silhuetas",
+      "surrealismo-simbolismo",
+      "efeitos-visuais"
+    ],
+    "placeholders": [],
+    "prompt_sha256": "ea75e210e23960f852859aa7832dc34aa063a3a4491b35496049ff59c679c5af"
+  }
+]

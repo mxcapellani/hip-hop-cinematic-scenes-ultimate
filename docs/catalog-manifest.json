@@ -1,0 +1,271 @@
+{
+  "source_sha256": "7046f7cd3544222640c448a7338bb6f7af078ea3f5d7c8dc3d430aa3cc85fbe0",
+  "prompt_count": 52,
+  "entry_count": 57,
+  "empty_count": 5,
+  "missing_scene_numbers": [
+    47
+  ],
+  "prompts": [
+    {
+      "id": "C001",
+      "title": "Rima no beco",
+      "prompt_sha256": "34125493f89a7a00eb6e16d8bb7213b25cc4c5cd341ef12599fe2109b25ecc7b"
+    },
+    {
+      "id": "C002",
+      "title": "Duas pessoas Break Dance",
+      "prompt_sha256": "7e7585adfd97b163142cb9d5ea11a9cc077f0f2e0348969b845e29375717adc9"
+    },
+    {
+      "id": "C003",
+      "title": "Grupo de Rap",
+      "prompt_sha256": "ec4a29be3b1bf0e387e3e7e4f5330230dfb18bc174c854b41bc9cea03aede66a"
+    },
+    {
+      "id": "C004",
+      "title": "Flex na loja à noite",
+      "prompt_sha256": "845c7a54983d31cc078451e7fd6447699d4bcb1b315f5b7c87eeb1af1ca76d41"
+    },
+    {
+      "id": "C005",
+      "title": "Subida futurista no metrô",
+      "prompt_sha256": "f5a0e28623ee38ea28c0b19c04c7cace58bd11a116f3ad26c3d0640acc21d5e1"
+    },
+    {
+      "id": "C006",
+      "title": "Cyberpunk no banco de trás",
+      "prompt_sha256": "514ee1882558360a4b281e95453c69467e5112d245c610f51d60ec7ab3a66b26"
+    },
+    {
+      "id": "C007",
+      "title": "Green Lens Energy",
+      "prompt_sha256": "1be785bc9f24611f6465fb23fc4c8d6bbd1fa6e693d750cbb5ebe43b1436a3c9"
+    },
+    {
+      "id": "C008",
+      "title": "Crimson Smoke",
+      "prompt_sha256": "f83ce5ff394ef9e8b3047049a4f71f5289e6c3905dc3603b10f12f1b9b503c3b"
+    },
+    {
+      "id": "C009",
+      "title": "Neon Drift",
+      "prompt_sha256": "63ce68b699795b76e0fad0adae891294cb5a85559dc6f454c1eb527a5ed6a861"
+    },
+    {
+      "id": "C010",
+      "title": "Red Horizon",
+      "prompt_sha256": "a14e4cfb42901ce24276be94c7863aeac6bc722be8b000f28e539fdf857079e6"
+    },
+    {
+      "id": "C011",
+      "title": "Skyline Mirage",
+      "prompt_sha256": "7040081e04d3b2cf7f28d3b5a69d55448e280b4e80ac04d21e4136a84e37ab2d"
+    },
+    {
+      "id": "C012",
+      "title": "Neon Velocity",
+      "prompt_sha256": "6e8dd93440a93dff2c32ed42279d66880eb183172db93e2a8d3e0268889bcef0"
+    },
+    {
+      "id": "C013",
+      "title": "Steel Silence",
+      "prompt_sha256": "1743451e4d98bca2b72aced6a598ea93b7b444028c433ab2c0e5024676e2f426"
+    },
+    {
+      "id": "C014",
+      "title": "Parallel Static",
+      "prompt_sha256": "4f47f9df0d77f3800a8aeec8742093e4f08d730898f6f81ff403ade4779c567f"
+    },
+    {
+      "id": "C015",
+      "title": "Concrete Reverie",
+      "prompt_sha256": "8f84a9f040da3b57c6364bacd127ea62c47a8793a935c997b8d768de03655a76"
+    },
+    {
+      "id": "C016",
+      "title": "Concrete Unity",
+      "prompt_sha256": "92d56ce8f3b1560d3a805b6b9c91e2efb1653684f8340449eeee0ffd6e9131e9"
+    },
+    {
+      "id": "C017",
+      "title": "Midnight Call",
+      "prompt_sha256": "02a83f782eb978f825f930439f8458dfe20e4e798ac2b82b4e2ce0cfe829ab90"
+    },
+    {
+      "id": "C018",
+      "title": "Ashes of Identity",
+      "prompt_sha256": "929ba05f8cdff7d376c52fffe707251048779603e9237aa2e1c89923949d36d3"
+    },
+    {
+      "id": "C019",
+      "title": "Frozen Broadcast",
+      "prompt_sha256": "ffd403175a190190e9249d1a57c9dc1f5c01f072fdd75c68088e287fe2b0352c"
+    },
+    {
+      "id": "C020",
+      "title": "The Burning Threshold",
+      "prompt_sha256": "c7ac33561efbb198abf9687128771f418213c7e3386aa6e104dc297f4f699159"
+    },
+    {
+      "id": "C021",
+      "title": "The Last Broadcast",
+      "prompt_sha256": "15e879d5c228d8c69c455c6df4ad816a8f0d6c583ad53fbe3b432fec4d19c3fc"
+    },
+    {
+      "id": "C022",
+      "title": "Diamond Trigger",
+      "prompt_sha256": "53aa4aa7ade196dad8842a53b7c059b01ba697c2197dd3cb93a2956bf25eae11"
+    },
+    {
+      "id": "C023",
+      "title": "Spectral Rider",
+      "prompt_sha256": "13b19925b8b58268431cbeafa845c87cd2178222c7fb2bd7d73d04f13d12c30d"
+    },
+    {
+      "id": "C024",
+      "title": "After the Fire",
+      "prompt_sha256": "ed8aa177beb45b92a1a61b23c9ac95066d85b5f9b952f59db2d8ee0b04ecb14e"
+    },
+    {
+      "id": "C025",
+      "title": "Golden Descent",
+      "prompt_sha256": "b53e70f4d4f4ce98c63fb159863d1560ff28a15ce9541b8a54aaf0bb8af2e080"
+    },
+    {
+      "id": "C026",
+      "title": "The Orange Gate",
+      "prompt_sha256": "bd7f5719869b3d2c66b08ababab61f60d2e25f2dbf0ce22385ebe849a3d66f7d"
+    },
+    {
+      "id": "C027",
+      "title": "Neon Solitude",
+      "prompt_sha256": "bc1430b5ff39d90bed46843451c968db17d4c47082abc663cbf24a9c2e8bcf21"
+    },
+    {
+      "id": "C028",
+      "title": "Crimson Drive",
+      "prompt_sha256": "3bd0f4c197fd6b4facb3ea77f99be150c5ec9f17d74fe25bc3c61377a3f30a4d"
+    },
+    {
+      "id": "C029",
+      "title": "Red Reverie",
+      "prompt_sha256": "c493ede9fc83957af24ae4783c95cec7c1cdd3fb96720e34aa05653f5200014f"
+    },
+    {
+      "id": "C030",
+      "title": "Red Corridor",
+      "prompt_sha256": "86839ca40a98dd618daad96532f0d3720c0511377e0a6dd0091f2b71182f20d0"
+    },
+    {
+      "id": "C031",
+      "title": "Scarlet Silence",
+      "prompt_sha256": "86c936c160798689add4098a3121219247de61e6726e058313439b33d0076e5d"
+    },
+    {
+      "id": "C032",
+      "title": "Crimson Spotlight",
+      "prompt_sha256": "c22e8f5fa952c298521c647a8eba9b119222ce95898145306b666767e325507e"
+    },
+    {
+      "id": "C033",
+      "title": "Echoes of Lonely",
+      "prompt_sha256": "bd986cffdac3b2f1e6623bd06875fc35ef7d49e38afdbb088e59f662fc09aa90"
+    },
+    {
+      "id": "C034",
+      "title": "Golden Solitude",
+      "prompt_sha256": "5395c18899d6ae5dd3a0344eff2df5292d6d97b0db24884fdcee8f66a00e7ae5"
+    },
+    {
+      "id": "C035",
+      "title": "Red Frame",
+      "prompt_sha256": "db4fd21671e58e57f442e8f6758654a79cf361267c7c7327fec3f58bdc753f49"
+    },
+    {
+      "id": "C036",
+      "title": "Eyes in the Dark",
+      "prompt_sha256": "497be6714ac4e295419ec4349db820e4dfe686625c802fce65b74f88fba5bf2c"
+    },
+    {
+      "id": "C037",
+      "title": "Event Horizon",
+      "prompt_sha256": "607220c523628089a754c9b5d7f2a5177b1226c5209ec82962d4c66f3bc7e9fb"
+    },
+    {
+      "id": "C038",
+      "title": "Celestial Frame",
+      "prompt_sha256": "70560f8870f6cb915bbd09a1b120d75f99a5ceb6056a95933a401139eae31fb0"
+    },
+    {
+      "id": "C039",
+      "title": "Echoes of Flight",
+      "prompt_sha256": "d76c35a897221163ee694a574c065164cb850723fb503508364bcd468fa2a557"
+    },
+    {
+      "id": "C040",
+      "title": "Ascension Field",
+      "prompt_sha256": "80cbed6d261992e85b260527b904bc3ade973400cf44455735743a5245563578"
+    },
+    {
+      "id": "C041",
+      "title": "Solar Eclipse",
+      "prompt_sha256": "ecdd286196455a31176dfd3b8e2c9b2456afe3b171cb829adbb5fde76284294d"
+    },
+    {
+      "id": "C042",
+      "title": "Ethereal Path",
+      "prompt_sha256": "2ef2cfa9007b5ada34f2ae5f82f64201f775877cf5d53db3041f579b30f7a9eb"
+    },
+    {
+      "id": "C043",
+      "title": "Touch of Light",
+      "prompt_sha256": "72f3e2edf9d5bd952a012122ac122c872792ce614eed4d0249d3cc9a2813ce67"
+    },
+    {
+      "id": "C044",
+      "title": "Neon Eclipse",
+      "prompt_sha256": "1bc97351bebcc6262d2c3594b1be8cb129e2ec45ac4dd75b238eb46993d3828a"
+    },
+    {
+      "id": "C045",
+      "title": "Sky Portal",
+      "prompt_sha256": "b77cc6d977f637dfc9a2718013824ae66b7f608752e3a1e4e68107083bffc44a"
+    },
+    {
+      "id": "C046",
+      "title": "Edge of Sky",
+      "prompt_sha256": "6271cc66b1498b2d82d2d41e26bc9b82e9886affe03c051d84799263eb00faab"
+    },
+    {
+      "id": "C048",
+      "title": "The Passage",
+      "prompt_sha256": "96516416a082171fc328d4f0940c5e3b8032c23a968d2e0b79932d96a13bf464"
+    },
+    {
+      "id": "C049",
+      "title": "Bloom of Light",
+      "prompt_sha256": "87fb59f81991cb3d4e9e36d74a849bc133f338af4c830bab571715c533813e63"
+    },
+    {
+      "id": "C050",
+      "title": "Embers of Departure",
+      "prompt_sha256": "914d153b21656839057af7284e3da39fcbf377a30b7eb21f4db8092a8b7e6d31"
+    },
+    {
+      "id": "C051",
+      "title": "Inner Noise",
+      "prompt_sha256": "41110c9b1d931a418ff94b2355b9be64e0d90856340b995039fde4962e4bcd3b"
+    },
+    {
+      "id": "C052",
+      "title": "Digital Scream",
+      "prompt_sha256": "e9c37aa987a599226cbaa8b446ecf5facc73125347989602366c2abe64ca1085"
+    },
+    {
+      "id": "C053",
+      "title": "Disoriented Warmth",
+      "prompt_sha256": "ea75e210e23960f852859aa7832dc34aa063a3a4491b35496049ff59c679c5af"
+    }
+  ]
+}

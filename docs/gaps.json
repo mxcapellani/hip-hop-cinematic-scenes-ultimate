@@ -1,0 +1,42 @@
+{
+  "empty_entries": [
+    {
+      "id": "G001",
+      "source_entry": 31,
+      "heading": "(Cena sem título)",
+      "status": "empty",
+      "prompt": null
+    },
+    {
+      "id": "G002",
+      "source_entry": 34,
+      "heading": "(Cena sem título)",
+      "status": "empty",
+      "prompt": null
+    },
+    {
+      "id": "G003",
+      "source_entry": 48,
+      "heading": "(Cena sem título)",
+      "status": "empty",
+      "prompt": null
+    },
+    {
+      "id": "G004",
+      "source_entry": 52,
+      "heading": "(Cena sem título)",
+      "status": "empty",
+      "prompt": null
+    },
+    {
+      "id": "G005",
+      "source_entry": 57,
+      "heading": "(Cena sem título)",
+      "status": "empty",
+      "prompt": null
+    }
+  ],
+  "missing_scene_numbers": [
+    47
+  ]
+}
